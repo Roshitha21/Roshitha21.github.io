@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/season-change.jpg" type="image/x-icon">
+		<title>HealthyLife</title>
+
+	    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	    <!-- <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700' rel='stylesheet' type='text/css'> -->
+	    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600' rel='stylesheet' type='text/css'>
+	    
+
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	</head>
+<style>
+    body {
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.25;
+      }
+      
+      table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+      }
+      
+      table caption {
+        font-size: 1.5em;
+        margin: .5em 0 .75em;
+      }
+      
+      table tr {
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        padding: .35em;
+      }
+      
+      table th,
+      table td {
+        padding: .625em;
+        text-align: center;
+      }
+      
+      table th {
+        font-size: .85em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+      }
+      
+      @media screen and (max-width: 600px) {
+        table {
+          border: 0;
+        }
+      
+        table caption {
+          font-size: 1.3em;
+        }
+        
+        table thead {
+          border: none;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px;
+        }
+        
+        table tr {
+          border-bottom: 3px solid #ddd;
+          display: block;
+          margin-bottom: .625em;
+        }
+        
+        table td {
+          border-bottom: 1px solid #ddd;
+          display: block;
+          font-size: .8em;
+          text-align: right;
+        }
+        
+        table td::before {
+          /*
+          * aria-label has no advantage, it won't be read inside a table
+          content: attr(aria-label);
+          */
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        
+        table td:last-child {
+          border-bottom: 0;
+        }
+      }
+</style>
+<body>
+	
+    <section class= "navs">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand logo" href="#">
+                          Health
+                          <span><i class="fa fa-stethoscope fa-flip-horizontal"></i></span>
+                             Life
+                      </a>
+                </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             About Us
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a  href="about.html" style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About</a>
+                              <div class="dropdown-divider"></div>
+                              <a  href="gallery.html" style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gallery</a>
+                              <div class="dropdown-divider"></div>
+                              <a  href="contact.html" style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</a>
+
+                            </div>
+                        </li><!-- <li><a href="about.html">About Us</a> -->
+                        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Patient Care
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a  href="doctors.html" style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Doctors</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a  href="Queries.html" style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patient Queries</a>
+
+                                  <div class="dropdown-divider"></div>
+                                  <a  href="rooms.html" style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Helpline Numbers</a>
+
+
+                                </div>
+                            </li>
+                        <!-- <li><a href="doctors.html">Patient Care</a></li> -->
+
+
+                        <li class="nav-item dropdown">
+                            <a  href="blog.html">Blogs</a>
+                            
+                             
+                        </li>
+                        
+
+                        <!-- <li><a href="blog.html">Testimonials</a></li> -->
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a  href="services.html" style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our Services</a>
+                              <div class="dropdown-divider"></div>
+                              
+                              <a  href="personal.html" style="color: black;">Personal Health Records</a>
+                              
+                            </div>
+                        </li>
+                        <!-- <li><a href="faq.html">Our Services</a></li> -->
+                        <li><a href="faq.html">FAQ's</a></li>
+                        
+                      </ul>
+                </div><!-- navbar-collapse -->
+            </div><!-- container-fluid -->
+        </nav>
+    </section>
+
+
+
+
+    <section class="blog-title text-center">
+        <div class="blog-wrapper">
+            <div class="container">
+                <div class= "row">	
+                    <h1 class="headline">State/UT's Helpline Number</h1>
+                </div>
+                <div class="row">
+                    <div class="sub-headline">
+                        <p>We provide different States and Union Territory Helpline Number for your Convenience in the emergency of COVID-19</p>
+                    </div>
+                </div>	
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <table>
+        <thead>
+          <tr>
+            <th scope="col">States/UT's</th>
+            <th scope="col">Helpline Number</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="States/UT's">Andaman & Nicobar</td>
+            <td data-label="Helpline Number">03192-232102</td>
+        </tr>
+         
+        <tr>
+            <td data-label="States/UT's">Andhra Pradesh</td>
+            <td data-label="Helpline Number">0866-2410978</td>
+        </tr>
+
+        <tr>
+            <td data-label="States/UT's">Arunachal Pradesh</td>
+            <td data-label="Helpline Number">9436055743</td>
+        </tr>
+
+        <tr>
+            <td data-label="States/UT's">Assam</td>
+            <td data-label="Helpline Number">6913347770</td>
+        </tr>
+
+        <tr>
+            <td data-label="States/UT's">Bihar</td>
+            <td data-label="Helpline Number">104</td>
+        </tr>
+
+        <tr>
+            <td data-label="States/UT's">Chandigarh</td>
+            <td data-label="Helpline Number">9779558282</td>
+        </tr>
+
+        <tr>
+            <td data-label="States/UT's">Chhattisgarh</td>
+            <td data-label="Helpline Number">104</td>
+        </tr> <tr>
+            <td data-label="States/UT's">Dadra Nagar Haveli</td>
+            <td data-label="Helpline Number">104</td>
+        </tr> <tr>
+            <td data-label="States/UT's">Delhi</td>
+            <td data-label="Helpline Number">011-22307145</td>
+        </tr> <tr>
+            <td data-label="States/UT's">Goa</td>
+            <td data-label="Helpline Number">104</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Gujarat</td>
+            <td data-label="Helpline Number">104</td>
+        </tr><tr>
+            <td data-label="States/UT's">Haryana</td>
+            <td data-label="Helpline Number">8558893911</td>
+        </tr><tr>
+            <td data-label="States/UT's">Himachal Pradesh</td>
+            <td data-label="Helpline Number">104</td>
+        </tr><tr>
+            <td data-label="States/UT's">Jammu</td>
+            <td data-label="Helpline Number">01912520982</td>
+        </tr><tr>
+            <td data-label="States/UT's">Jharkhand</td>
+            <td data-label="Helpline Number">104</td>
+        </tr>
+
+        <tr>
+            <td data-label="States/UT's">Karnataka</td>
+            <td data-label="Helpline Number">104</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Kashmir</td>
+            <td data-label="Helpline Number">01942440283</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Kerala</td>
+            <td data-label="Helpline Number">0471-2552056
+            </td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Ladakh</td>
+            <td data-label="Helpline Number">01982256462</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Lakshadweep</td>
+            <td data-label="Helpline Number">104</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Madhya Pradesh	</td>
+            <td data-label="Helpline Number">104</td>
+        </tr>
+
+        <tr>
+            <td data-label="States/UT's">Maharashtra	</td>
+            <td data-label="Helpline Number">020-26127394
+            </td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Manipur	</td>
+            <td data-label="Helpline Number">3852411668</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Meghalaya	</td>
+            <td data-label="Helpline Number">108</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Mizoram	</td>
+            <td data-label="Helpline Number">102</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Nagaland	</td>
+            <td data-label="Helpline Number">7005539653</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Odisha	</td>
+            <td data-label="Helpline Number">9439994859</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Puducherry	</td>
+            <td data-label="Helpline Number">104</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Punjab	</td>
+            <td data-label="Helpline Number">104</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Rajasthan	</td>
+            <td data-label="Helpline Number">0141-2225624
+            </td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Sikkim		</td>
+            <td data-label="Helpline Number">104</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Tamil Nadu		</td>
+            <td data-label="Helpline Number">044-29510500</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Telangana	</td>
+            <td data-label="Helpline Number">104</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Tripura	</td>
+            <td data-label="Helpline Number">0381-2315879
+            </td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Uttarakhand	</td>
+            <td data-label="Helpline Number">104</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">Uttar Pradesh		</td>
+            <td data-label="Helpline Number">18001805145</td>
+        </tr>
+        <tr>
+            <td data-label="States/UT's">West Bengal	</td>
+            <td data-label="Helpline Number">03323412600</td>
+        </tr>
+        </tbody>
+      </table>
+           
+		<section id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<ul class="text-center contact">
+				        	<li class= "socials-icons">
+								<a href="#" data-toggle="tooltip" title="Share in Facebook" class="facebook"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li class= "socials-icons">
+								<a href="#" data-toggle="tooltip" title="Share in Twitter" class="twitter"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li class= "socials-icons">
+								<a href="#" data-toggle="tooltip" title="Share in Google +" class="google-plus"><i class="fa fa-google-plus"></i></a>
+							</li>
+							<li class= "socials-icons">
+								<a href="#" data-toggle="tooltip" title="Share in Instagram" class="instagram"><i class="fa fa-instagram"></i></a>
+							</li>
+							<li class= "socials-icons">
+								<a href="#" data-toggle="tooltip" title="Share in Pinterest" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							</li>
+							<li class= "socials-icons">
+								<a href="#" data-toggle="tooltip" title="Connect with Skype" class="skype"><i class="fa fa-skype"></i></a>
+							</li>
+				      	</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copy-right-text text-center">
+							&copy; Copyright 2020, Our Website Link. By <a href="https://healthylife.com/">Healthy Life</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    </body>
+    
+		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="assets/js/wow.min.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+		<script>
+      		new WOW().init();
+		</script>
+		<script type="text/javascript">
+			$(".faq-q").click( function () {
+			  var container = $(this).parents(".faq-c");
+			  var answer = container.find(".faq-a");
+			  var trigger = container.find(".faq-t");
+			  
+			  answer.slideToggle(200);
+			  
+			  if (trigger.hasClass("faq-o")) {
+			    trigger.removeClass("faq-o");
+			  }
+			  else {
+			    trigger.addClass("faq-o");
+			  }
+			});
+		</script>	
+</html>
